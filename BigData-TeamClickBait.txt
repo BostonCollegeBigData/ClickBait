@@ -1,0 +1,42 @@
+﻿Mobile vs Desktop
+ Mobile emails are easier to open but harder to link to a donation. Advancement office has a hypothesis that the prevalence of mobile emails has led to a decline in donation.
+
+
+Merging Dataset 
+* Change the name of mill_id to constituent_id so that we can merge the demographic data
+
+
+How Many Emails Opened on Mobile vs. Desktop?
+A cross tabulation of the variables “email_open” and “desktop” using the 5% sample of the summary dataset shows:  
+* 72.3 % of emails went unopened. The 27.7% breaks out as: 
+* 14.1% were opened only on mobile 
+* 13.3% were opened only on desktop
+
+
+How Many Donations Were Clicked in Mobile vs Desktop? 
+A cross tabulation of variables “mobile” and “click” using the 5% sample of the summary dataset shows:
+* 2.58% of all emails were “clicked”. Of those clicked:
+   * 53.2% were on desktop
+   * 45.7% were on mobile
+
+
+We should look at this as a time series in order to understand any directional trends. Are we sending more mobile emails, and are they being opened at a greater (or lesser) rate? 
+
+
+What problems are you solving?
+        Do mobile clicks or desktop clicks result in higher FY15/16 giving?
+
+
+What variables do you need?
+        Mill_id (constituent_id): unique identifier 
+        Desktop/ Mobile
+        FY15 Cash Vs. FY16 Cash
+        How do we fix date variable issue?
+What methods do you need?
+        Many to 1 (m:1) merge by Mill_id (constituent_id)
+        Drop FY15_Cash and FY16_Cash in top 5%
+What technologies do you need?
+        Stata
+        R
+How will you report and present your findings?
+        Tableau
