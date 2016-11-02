@@ -259,4 +259,11 @@ export delimited using "/Users/palanza/Documents/BC - Big Data Econometrics/5pct
 
 * Focus on Annual Giving Campaign only
 keep if campaign == "Annual Giving Campaign" 
+export delimited using "/Users/palanza/Documents/BC - Big Data Econometrics/Annual Giving Campaign.csv", replace
+
+*Last 10 years only
+keep if ugradyear >=2005
+export delimited using "/Users/palanza/Documents/BC - Big Data Econometrics/Last10yrs.csv", replace
+
+*
 
